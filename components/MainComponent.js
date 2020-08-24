@@ -4,7 +4,6 @@ import Home from "./HomeComponent";
 import Dishdetail from "./DishdetailComponent";
 import {View, Platform} from "react-native";
 import {createStackNavigator, createDrawerNavigator} from 'react-navigation';
-import Expo from 'expo';
 
 const MenuNavigator = createStackNavigator(
 		{
