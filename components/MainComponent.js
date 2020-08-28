@@ -143,14 +143,6 @@ const CustomDrawerContentComponent = (props) => (
 		</ScrollView>
 );
 const MainNavigator = createDrawerNavigator({
-			Home: {
-				screen: HomeNavigator,
-				navigationOptions: {
-					title: 'Home', drawerLabel: "Home", drawerIcon: ({tintColor}) => (
-							<Icon name={'home'} type={'font-awesome'} size={24} color={tintColor}/>
-					)
-				}
-			},
 			Menu: {
 				screen: MenuNavigator,
 				navigationOptions: {
@@ -158,7 +150,15 @@ const MainNavigator = createDrawerNavigator({
 							<Icon name={'list'} type={'font-awesome'} size={24} color={tintColor}/>
 					)
 				}
+			}, Home: {
+				screen: HomeNavigator,
+				navigationOptions: {
+					title: 'Home', drawerLabel: "Home", drawerIcon: ({tintColor}) => (
+							<Icon name={'home'} type={'font-awesome'} size={24} color={tintColor}/>
+					)
+				}
 			},
+
 			About: {
 				screen: AboutNavigator,
 				navigationOptions: {
