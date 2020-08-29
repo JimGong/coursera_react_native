@@ -10,6 +10,8 @@ export const favorites = (state = [], action) => {
 			}
 		case ActionTypes.POST_FAVORITE:
 			return
+		case ActionTypes.DELETE_FAVORITE:
+			return state.filter(fav => fav != action.payload);
 		default:
 			return state;
 	}
